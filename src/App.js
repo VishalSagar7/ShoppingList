@@ -92,16 +92,16 @@ function App() {
        });
   }
 
-  useEffect(() => {
-    const storedItems = localStorage.getItem('items');
-    if (storedItems) {
-      setItems(JSON.parse(storedItems));
-    }
-  }, []);
+  // useEffect(() => {
+  //   const storedItems = localStorage.getItem('items');
+  //   if (storedItems) {
+  //     setItems(JSON.parse(storedItems));
+  //   }
+  // }, []);
 
-  useEffect(() => {
-    localStorage.setItem('items', JSON.stringify(items));
-  }, [items]);
+  // useEffect(() => {
+  //   localStorage.setItem('items', JSON.stringify(items));
+  // }, [items]);
 
   return (
     <div className="w-full pt-[10px] flex flex-col items-center min-h-[100vh] bg-gray-200 font-ubantu px-[20px] lg:px-[0]">
